@@ -1,0 +1,6 @@
+{
+  "name": "Biometric Attendance Studio",
+  "description": "Dynamic biometric attendance sheet generator, interactive Excel/CSV studio, compliance analytics, and customizable Python desktop/CLI script builder.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

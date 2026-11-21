@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: #0f172a;
+    background-color: #f8fafc;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Crisp custom scrollbars for data tables and code panels */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+@media print {
+  header,
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+  }
+}
